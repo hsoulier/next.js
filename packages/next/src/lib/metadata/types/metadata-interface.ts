@@ -712,6 +712,9 @@ type SitemapFile = Array<{
   alternates?:
     | {
         languages?: Languages<string> | undefined
+        media?: {
+          [media: string]: string | undefined
+        }
       }
     | undefined
   images?: string[] | undefined
